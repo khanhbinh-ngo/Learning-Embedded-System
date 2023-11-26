@@ -1,0 +1,1 @@
+using temperature sensor, read data to serial monitor
