@@ -1,0 +1,24 @@
+== KIEM TRA CAM BIEN AM THANH ==
+== SCENARIO ==
+a. devices
++ 1 sound sensor
++ 10 led 
++ follower devices
+b. main idea:
++ when create a random sound, sensor will take this and convert to LED signals
++ more strong the sound, more HIGH leds were turn on
+
+
+== IDEAS == 
+
+step[1]:
+    + receive data from the sensor
+
+step[2]: 
+    + create some conventions of range of sound
+    + 10 levels from lowest to highest
+    + 4 first levels, each levels have 20points 
+    + from 5th level to 10th, each level gain more 20 points than previous level
+    
+step[3]: 
+    + depend on how high the signal, turn on LEDs as more as we have setup before
