@@ -1,6 +1,6 @@
 const int soundSensorPin = A0; // analog for sound sensor
 
-const int thresh_hole = 800; // setup for clapping.
+const int thresh_hole = 780; // setup for clapping.
 
 unsigned long lastClapTime;
 const int clapInterval = 500;
@@ -29,11 +29,12 @@ void loop() {
     if(millis() - lastClapTime >= clapInterval){
       clapCount++;
     }
-    delay(1000); // delay 1s to avoid multiple clap sound in one section
   }
   delay(500); // delay 0.5s before receive next signals
+
   Serial.print("Clap time: ");
   Serial.println(clapCount);
+  
     if(clapCount == 1){
       digitalWrite(lightPin_1, LOW); 
       digitalWrite(lightPin_2, HIGH);
@@ -45,4 +46,5 @@ void loop() {
       digitalWrite(lightPin_2, HIGH);
       clapCount = 0;
     }
+
 }
