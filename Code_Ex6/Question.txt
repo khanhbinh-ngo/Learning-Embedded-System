@@ -1,4 +1,5 @@
 == KIEM TRA CAM BIEN AM THANH ==
+
 == SCENARIO ==
 a. devices
 + 1 sound sensor
@@ -9,16 +10,19 @@ b. main idea:
 + more strong the sound, more HIGH leds were turn on
 
 
-== IDEAS == 
+== IDEATE == 
 
 step[1]:
     + receive data from the sensor
-
 step[2]: 
     + create some conventions of range of sound
     + 10 levels from lowest to highest
     + 4 first levels, each levels have 20points 
     + from 5th level to 10th, each level gain more 20 points than previous level
-    
 step[3]: 
     + depend on how high the signal, turn on LEDs as more as we have setup before
+step[4]: 
+    + I realized that I can act like an anime character, so I decided to add sinwave and calculate those signals
+    + by using one function to act like a god
+
+== SOMETHING I SHOULD WRITE HERE, BUT IM NOT ==
